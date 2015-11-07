@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
     charge_only_mode \
     libmoto
 
-# Misc
-PRODUCT_PACKAGES += \
-    libxml2
-
 # OMX
 PRODUCT_PACKAGES += \
     libdashplayer \
@@ -163,6 +159,7 @@ PRODUCT_PACKAGES += \
     curl \
     libbson \
     libcurl \
+    libxml2 \
     tcpdump
 
 # Ramdisk
@@ -181,6 +178,10 @@ PRODUCT_PACKAGES += \
     init.mmi.usb.sh \
     init.qcom.rc \
     ueventd.qcom.rc
+
+# SSL Compat
+PRODUCT_PACKAGES += \
+    libboringssl-compat
 
 # Stlport
 PRODUCT_PACKAGES += \
