@@ -14,11 +14,9 @@
 # limitations under the License.
 #
 
-
 LOCAL_PATH := device/motorola/surnia
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
@@ -47,7 +45,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 DEVICE_PACKAGE_OVERLAYS := \
@@ -74,7 +72,6 @@ PRODUCT_PACKAGES += \
     tinymix \
     libqcomvisualizer \
     libqcomvoiceprocessing
-
 
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
@@ -185,8 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstlport
 
-
-
 # Wifi
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
@@ -205,6 +200,7 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     CMActions
+
 PRODUCT_PACKAGES += \
     WCNSS_qcom_wlan_factory_nv.bin
 
@@ -246,4 +242,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=2m \
     dalvik.vm.heapmaxfree=8m
-
