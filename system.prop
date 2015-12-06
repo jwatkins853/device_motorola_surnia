@@ -29,7 +29,6 @@ persist.radio.apn_delay=5000
 #
 persist.cne.feature=0
 
-
 #
 # system props for the iwlan module
 #
@@ -60,12 +59,6 @@ persist.data.netmgrd.qos.enable=true
 #system props for time-services
 persist.timed.enable=true
 
-#
-# system prop for opengles version
-#
-# 196608 is decimal for 0x30000 to report version 3
-ro.opengles.version=196608
-
 # System property for cabl
 ro.qualcomm.cabl=0
 
@@ -75,12 +68,6 @@ ro.gps.agps_provider=1
 ro.pip.gated=0
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-#
-# system prop for opengles version
-#
-# 196608 is decimal for 0x30000 to report version 3
-ro.opengles.version=196608
-#
 # System props for bluetooh
 # System prop to turn on hfp client
 bluetooth.hfp.client=1
@@ -104,7 +91,7 @@ ro.audio.fm_max_volume=5169
 # Tone generator maximum volume be between 0 and 100 (0dB)
 ro.audio.ringbeep_volume=73
 #Buffer size in kbytes for compress offload playback
-audio.offload.buffer.size.kb=240
+audio.offload.buffer.size.kb=64
 #Minimum duration for offload playback in secs
 audio.offload.min.duration.secs=30
 # Motorola enable offload audio playback
