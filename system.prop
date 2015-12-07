@@ -24,6 +24,11 @@ persist.radio.no_wait_for_card=1
 persist.radio.relay_oprt_change=1
 persist.radio.dfr_mode_set=1
 persist.radio.apn_delay=5000
+ro.telephony.ril.config=simactivation
+ro.ril.multi_rat_capable=true
+# Disable mobile data at first boot
+ro.com.android.mobiledata=true
+
 #
 # system props for the cne module
 #

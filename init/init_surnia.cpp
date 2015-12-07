@@ -132,7 +132,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.mot.build.customerid", "retbr");
     }
     property_get("ro.product.device", device);
-    property_set("ro.product.display", "Moto E");
+    property_set("ro.product.display", "Moto E 2015");
     strlcpy(devicename, device, sizeof(devicename));
     ERROR("Found radio id: %s setting build properties for %s device\n", radio, devicename);
 }
@@ -142,9 +142,6 @@ void cdma_properties(const char *cdma_sub)
     property_set("ril.subscription.types","NV,RUIM");
     property_set("DEVICE_PROVISIONED","1");
     property_set("telephony.lteOnCdmaDevice", "1");
-    //Is it a bad typo or not? Don't know so I'll leave it there for now
-    property_set("telephony.slteOnCdmaDevice", "1");
-    property_set("ro.telephony.default_network", "8");
 }
 void gsm_properties(bool msim)
 {
